@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * Created by countdyang on 7/15/2018.
  */
-public class unitTest {
+public class UnitTest {
 
     Combination temp = new Combination();
 
