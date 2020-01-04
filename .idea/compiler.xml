@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Letter_combinations" />
         <module name="Minicodingtest" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Minicodingtest" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="Letter_combinations" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -11,8 +11,6 @@ public class Combination {
     public List<String> letterCombination(int[] input){
         List<String> answer = new ArrayList<String>();
         String answerElement = "";
-
-
         //construct the relationship according to the picture
         Map<Integer,String> map = new HashMap<Integer, String>();
         map.put(0,"");

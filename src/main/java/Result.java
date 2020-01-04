@@ -4,7 +4,7 @@
 public class Result {
     public static void main(String args[]){
         Combination temp = new Combination();
-        int[] input = {1,3,4};
+        int[] input = {13,99};
         System.out.println(temp.letterCombination(input));
 
     }

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by countdyang on 7/15/2018.
+ * Created by countdyang on 12/21/2019.
  */
 public class UnitTest {
 
@@ -18,6 +18,14 @@ public class UnitTest {
         List<String> expResult = Arrays.asList(exp);
         Assert.assertEquals(expResult,temp.letterCombination(input));
 	}
+
+    @Test
+    public void testForInvalidInput(){
+        int[] input = {'*',3};
+        String[] exp = new String[] { "" };
+        List<String> expResult = Arrays.asList(exp);
+        Assert.assertEquals(expResult,temp.letterCombination(input));
+    }
 
     @Test
     public void testForTwoSingleDigitContainZeroOne1(){
