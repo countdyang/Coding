@@ -11,11 +11,8 @@ public class Combination {
     public List<String> letterCombination(int[] input){
         List<String> answer = new ArrayList<String>();
         String answerElement = "";
-        //check valid input
-        if(input == null || input.length == 0){
-            answer.add(answerElement);
-            return answer;
-        }
+
+
         //construct the relationship according to the picture
         Map<Integer,String> map = new HashMap<Integer, String>();
         map.put(0,"");
@@ -28,6 +25,18 @@ public class Combination {
         map.put(7,"pqrs");
         map.put(8,"tuv");
         map.put(9,"wxyz");
+
+        //check valid input
+        if(input == null || input.length == 0){
+            answer.add(answerElement);
+            return answer;
+        }
+        for(int i=0;i<input.length;i++){
+            if(!map.keySet().contains(input[i])){
+                answer.add(answerElement);
+                return answer;
+            }
+        }
 
         //Format input to support input that more than 1 digit
         List<Integer> newInput = new ArrayList<Integer>();
