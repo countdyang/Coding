@@ -11,6 +11,7 @@ public class Combination {
     public List<String> letterCombination(int[] input){
         List<String> answer = new ArrayList<String>();
         String answerElement = "";
+
         //construct the relationship according to the picture
         Map<Integer,String> map = new HashMap<Integer, String>();
         map.put(0,"");
@@ -30,7 +31,7 @@ public class Combination {
             return answer;
         }
         for(int i=0;i<input.length;i++){
-            if(!map.keySet().contains(input[i])){
+            if(input[i]=='*' || input[i] == '#'){
                 answer.add(answerElement);
                 return answer;
             }
