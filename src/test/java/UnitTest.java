@@ -20,6 +20,14 @@ public class UnitTest {
 	}
 
     @Test
+    public void testForOneSingleDigit(){
+        int[] input = {9};
+        String[] exp = new String[] { "w", "x", "y", "z"};
+        List<String> expResult = Arrays.asList(exp);
+        Assert.assertEquals(expResult,temp.letterCombination(input));
+    }
+
+    @Test
     public void testForInvalidInput(){
         int[] input = {'*',3};
         String[] exp = new String[] { "" };
