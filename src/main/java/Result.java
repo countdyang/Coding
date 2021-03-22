@@ -1,11 +1,12 @@
 /**
- * Created by countdyang on 12/21/2019.
+ * Created by countdyang on 3/22/2021.
  */
 public class Result {
     public static void main(String args[]){
-        Combination temp = new Combination();
-        int[] input = {13,99};
-        System.out.println(temp.letterCombination(input));
+        Intersection output = new Intersection();
+        int[] input = {2,10,4,9,3,8};
+        int[] result = output.getIntersectionOfIntervals(input);
+        System.out.println("[" + result[0] + "," + result[1] + "]");
 
     }
 }
